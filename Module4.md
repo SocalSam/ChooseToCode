@@ -19,6 +19,17 @@ Now, let's get started with creating a place to put your new website. If you hav
 
 We are going to start at the Azure portal. With your browser, navigate to http://portal.azure.com. If you need to sign in, go ahead and do that now and you should arrive at the portal home page.
 
+![Azure Portal Home](images/azure-portal-home.png?raw=true)
+
+Now, in the upper left corner, click the plus sign or "New" button to create a new Azure resource.
+
+![Azure New Resource](images/azure-new-resource.png?raw=true)
+
+In the Create blade that comes up, click the "Web + Mobile" option and then select "Web App" to begin creating a Web App resource for your website.
+
+![Azure Create Resource](images/azure-create-resource.png?raw=true)
+
+Next, in the "Web App" blade that comes up, we will enter a little bit of information about your website.
 
 
 Publish
