@@ -1,15 +1,10 @@
-﻿#Module 4: HTML5 and the Semantic Web
+﻿#Module X: Publishing a Web App
 
 ###Objectives:
-- Learn about HTML
 - Publish a simple web page
-- Plan your website
-- Create your first website
-- Publish your website
-- Continuous Deployment
 
 ###Introduction:
-So far, we have just been getting set up with the tools you need for web development. In this module we want to begin creating your first website. We will start by creating a Web App on Azure to host your website for all the world to see. Then we'll create a simple page to learn how we publish. Finally, we'll give a quick introduction to the pieces of code that are in almost every web page.
+In this module you will learn how to publish a website to Microsoft Azure. We will start by creating a Web App on Azure to host your website for all the world to see. Then we'll set up a place for your source code and watch as Azure publishes your code to your website.
 	
 ###Create an Azure Web App
 First, let's get started with creating a place to put your new website. At this point, you need to have an active Azure subscription and a machine set up with Visual Studio Code and Git.
@@ -62,15 +57,11 @@ NOTE: The full deployment username will be the name of your website and the user
 
 ![Set Up Authentication](images/set-up-authentication.png?raw=true)
 
-So now that you have your source control in place, it's time to sync up your work.
+So now that you have Azure set up for your source code it's time get some code in there to get published.
 
-###Plan your website
-Header
+###Connecting your code to Azure
 
-Footer
+The last thing we need to get from the Azure portal is your "git clone url". This is located on your Web App management blade. 
 
-Body
+At this point, we need to get your local code folder ready to push code to Azure. At a "Git Shell" prompt, we are going to add a connection to a remote repository. In the example, I use the name "azure" to remind me that this remote connection is on Azure.
 
-Navigation
-
-Images
