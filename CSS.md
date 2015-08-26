@@ -49,7 +49,7 @@ Finally, let's learn how to add links to other locations. We will use an anchor 
 We can change this to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, the following is the same hyperlink, but we are using a logo for the item to click. There is no text displayed as part of this hyperlink.
 
 ````
-<a href="http://amazon.com"><img src="amazonlogo.jpg" /></a>
+<a href="http://amazon.com"><img src="images/amazonlogo.jpg" /></a>
 ````
 
 ###Now for some style
