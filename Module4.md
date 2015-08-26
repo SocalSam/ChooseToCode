@@ -2,6 +2,8 @@
 
 ###Objectives:
 - Publish a simple web page
+- Set up Continuous Deployment
+- Use modern source control tools
 
 ###Introduction:
 In this module you will learn how to publish a website to Microsoft Azure. We will start by creating a Web App on Azure to host your website for all the world to see. Then we'll set up a place for your source code and watch as Azure publishes your code to your website.
@@ -59,9 +61,66 @@ NOTE: The full deployment username will be the name of your website and the user
 
 So now that you have Azure set up for your source code it's time get some code in there to get published.
 
+The next thing we need to get from the Azure portal is your "git clone url". This is located on your Web App management blade. Copy this URL to your clipboard and we will use it in a minute.
+
+![git clone url](images/git-clone-url.png?raw=true)
+
+Now we have everything we need to connect up to Azure.
+
 ###Connecting your code to Azure
 
-The last thing we need to get from the Azure portal is your "git clone url". This is located on your Web App management blade. 
+At this point, we need to get your local code folder ready to push code to Azure. Start up a "Git Shell" and navigate to the folder where you have stored your code.
 
-At this point, we need to get your local code folder ready to push code to Azure. At a "Git Shell" prompt, we are going to add a connection to a remote repository. In the example, I use the name "azure" to remind me that this remote connection is on Azure.
+If you are using a Mac, at your shell prompt you can type
+
+````
+cd /path/to/code/directory
+````
+
+On Windows, you can use:
+
+````
+cd c:/path/to/code/directory
+````
+
+Once we get to the directory where you have the basic website we have been working on, we will need to create a local git repository on your machine. We create that repository with the following command:
+
+````
+git init
+````
+
+This will create an invisible ".git" folder along side your project that will keep track of all of the changes to your code. At this point, we need to add all of the code that you have created so far to a check in list.
+
+````
+git add .
+````
+
+The "." is a wildcard and means "add all files". Next, we need to commit all of the files we just added to the check in list.
+
+````
+git commit -m "Initial commit"
+````
+
+The "-m" means add message and then in quotes we put the message to put on the commit as the files are checked in.
+
+Alright, at this point, we have a git repository in Azure (that is currently empty) and we have a git repository on our local machine. We now need to sync the changes up to azure.
+
+First, we need to tell our local git repository that we want to connect it to the Azure repository. To do this, we add a remote connection. Remember that "git clone url" we copied a few minutes ago? This is where we need to use it. Replace the https:// below with your "git clone url".
+
+````
+git remote add azure -f https://username@website.scm.blah.blah
+````
+
+This command will add a remote repository and fetch any existing items from it to syncronize our repositories. I use the name "azure" to remind me that I am pushing the code to Azure. Sometimes I will have multiple remote repositories, and they each can be named something different. In the documentation, you will often see this as "origin".
+
+Finally, lets push our code from our local machine to Azure. When we do this, Azure will automatically kick off a deploy and put our code into our website.
+
+````
+git push azure master
+````
+
+Now, if you navigate to your web site, instead of that blue page, you should see your web site up and running. 
+
+Congratulations, you just set up a continuously deployed web site in the cloud using modern source control tools.
+
 
