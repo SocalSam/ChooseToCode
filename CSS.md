@@ -53,7 +53,7 @@ We can change this to a more interesting link like an image if we change the con
 ````
 
 ###Now for some style
-Now that you have a few more items to work with in your HTML, let's look at some ways that we can make thinks look a little more stylish than plain black and white text.
+Now that you have a few more items to work with in your HTML, let's look at some ways that we can make things look a little more stylish than plain black and white text.
 
 We have already seen that using different tags will make items display in different sizes, but we can also use what are called styles. There are two different ways we can do styles. The first is with inline styles where we add a description of how we want the text to appear in the middle of our HTML.
 
