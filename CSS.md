@@ -40,13 +40,20 @@ Next, copy an image to this folder and then we can add it to part of your web pa
 ````
 
 ###Adding Hyperlinks
-Finally, let's learn how to add links to other locations. We will use an anchor tag for this, and we'll start with something simple like text. Here, we have an example of a hyperlink to an online shopping site. Notice, that the "href" attribute is the URL or address of the page that we are linking to and the "Click Here to Shop" is what is displayed to the user.
+Finally, let's learn how to add links to other locations. We will use an anchor tag for this, and we'll start with something simple like text. Let's take our list of things to do and make hyperlinks to a search engine.
 
 ````
-<a href="http://amazon.com">Click Here to Shop</a>
+<h2>Things to Do</h2>
+<ol>
+	<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+	<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+	<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+	<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
+</ol>
+
 ````
 
-We can change this to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, the following is the same hyperlink, but we are using a logo for the item to click. There is no text displayed as part of this hyperlink.
+We can change hyperlinks to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, in the following hyperlink, we are using an image for the item to click. There is no text displayed as part of this hyperlink.
 
 ````
 <a href="http://amazon.com"><img src="images/amazonlogo.jpg" /></a>
@@ -102,22 +109,24 @@ header, footer {
 
 Save you "app.css" and refresh your browser to see how it looks.
 
-Let's move on to the body of the web page. Let's take the two lists that we have and put an HTML tag for an \<aside> around them to show they are not a main part of the content. 
+Let's move on to the body of the web page. Let's take the first list that we have and put the HTML tag \<nav> around it to show they are not a main part of the content. Typically, we would use this tag to identify a navigation menu.
+
+````
+<nav>
+	<h2>Things to Do</h2>
+	<ol>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
+	</ol>
+</nav>
+````
+
+Next, lets put a tag around the second list to call it out as not being part of the main content. In this case, we will use the \<aside> tag.
 
 ````
 <aside>
-	<h2>Things to Do</h2>
-	<ol>
-		<li>Hiking</li>
-		<li>Biking</li>
-		<li>Horseback</li>
-		<li>Backpacking</li>
-	</ol>
-</aside>
-
-...
-
-<aside class="col-sm-2">
 	<h2>How to Get Here</h2>
 	<ul>
 		<li>By Plane</li>
@@ -128,13 +137,13 @@ Let's move on to the body of the web page. Let's take the two lists that we have
 </aside>
 ````
 
-Finally, for the rest of the body, let's define this as a \<section>. All of the content between our two \<aside> lists will be surrounded by this \<section> tag.
+Finally, for the rest of the body, let's define this as a \<section>. All of the content between our \<nav> and \<aside> lists will be surrounded by this \<section> tag.
 
 Now, let's set the colors and alignment for our lists.
 
 ````
-aside {
-	background-color: #aaa
+nav, aside {
+	background-color: #0aa
 	text-align: center;
 	padding-top: 40px;
 }
@@ -149,7 +158,7 @@ h2 {
 ````
 Now, save and refresh your browser to see the formatting updates that we have made.
 
-Oops! We have a problem. All of the \<h2> tags were updated to be red and that is not what we wanted. We only wanted our list titles to be red.
+Oops! We have a problem. All of the \<h2> tags were updated to be the red and that is not what we wanted. We only wanted our list titles to be red.
 
 One of the ways we can fix this is to change our selectors to be more specific. For example, the following selector would tell the style only to be applied to \<h2> tags inside of the \<aside> tag.
 
@@ -162,22 +171,23 @@ aside h2 {
 Another way to fix this is by adding a class to the \<h2> in our lists and call it "listtitle".
 
 ````
-<aside>
+<nav>
 	<h2 class="listtitle">Things to Do</h2>
 	<ol>
-		<li>Hiking</li>
-		<li>Biking</li>
-		<li>Horseback</li>
-		<li>Backpacking</li>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
 	</ol>
-</aside>
+
+</nav>
 ````
 
 Now we can tell our stylesheet to apply the red color not to the \<h2> tag, but to the "listtitle" class. Notice in the selector, we are telling it to use a class by starting the with a dot.
 
 ````
 .listtitle {
-	color: red;
+	color: moccasin;
 }
 ````
 
@@ -186,15 +196,15 @@ Save and refresh to see your list titles updated.
 We can mix and match selectors for tags and classes to get pretty specific about the items we are asking to style. There is an additional selector for a tag with a specific id (we use "#" instead of the "." dot). First you would add an "id" attribute to your html tag.
 
 ````
-<aside>
+<nav>
 	<h2 class="listtitle">Things to Do</h2>
 	<ol id="todolist">
-		<li>Hiking</li>
-		<li>Biking</li>
-		<li>Horseback</li>
-		<li>Backpacking</li>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
 	</ol>
-</aside>
+</nav>
 ````
 Then add whatever styling elements that you needed to make it look right for your design.
 
