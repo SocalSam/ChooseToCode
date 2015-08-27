@@ -36,7 +36,7 @@ Let's create a folder for images and then link an image to your web page.
 Next, copy an image to this folder and then we can add it to part of your web page with an \<img> tag. Notice that the "src" attribute is pointing to where the image is stored. This could also be an image stored on another server.
 
 ````
-<img src="images\picture1.jpg" />
+<img src="images/picture1.jpg" />
 ````
 
 ###Adding Hyperlinks
