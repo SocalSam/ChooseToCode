@@ -58,7 +58,7 @@ Now that you have a few more items to work with in your HTML, let's look at some
 We have already seen that using different tags will make items display in different sizes, but we can also use what are called styles. There are two different ways we can do styles. The first is with inline styles where we add a description of how we want the text to appear in the middle of our HTML.
 
 ````
-<p style="color=red;text-align=center">some text</p>
+<p style="color:red;text-align:center">some text</p>
 
 ````
 
