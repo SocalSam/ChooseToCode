@@ -36,7 +36,7 @@ Let's create a folder for images and then link an image to your web page.
 Next, copy an image to this folder and then we can add it to part of your web page with an \<img> tag. Notice that the "src" attribute is pointing to where the image is stored. This could also be an image stored on another server.
 
 ````
-<img src="images\picture1.jpg" />
+<img src="images/picture1.jpg" />
 ````
 
 ###Adding Hyperlinks
@@ -49,16 +49,16 @@ Finally, let's learn how to add links to other locations. We will use an anchor 
 We can change this to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, the following is the same hyperlink, but we are using a logo for the item to click. There is no text displayed as part of this hyperlink.
 
 ````
-<a href="http://amazon.com"><img src="amazonlogo.jpg" /></a>
+<a href="http://amazon.com"><img src="images/amazonlogo.jpg" /></a>
 ````
 
 ###Now for some style
-Now that you have a few more items to work with in your HTML, let's look at some ways that we can make thinks look a little more stylish than plain black and white text.
+Now that you have a few more items to work with in your HTML, let's look at some ways that we can make things look a little more stylish than plain black and white text.
 
 We have already seen that using different tags will make items display in different sizes, but we can also use what are called styles. There are two different ways we can do styles. The first is with inline styles where we add a description of how we want the text to appear in the middle of our HTML.
 
 ````
-<p style="color=red;text-align=center">some text</p>
+<p style="color:red;text-align:center">some text</p>
 
 ````
 
