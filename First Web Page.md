@@ -8,7 +8,10 @@ Let's get going by starting up Visual Studio Code. Once the editor is open, we w
 ![VSCode File Open Folder](images/vscode-file-open-folder.png?raw=true)
 
 In the dialog window that comes up, navigate to a good location to store your new project. Often the best place will be your "Documents" folder, but choose a location where you will remember where to find it later. Once you have a location selected, you will want to create a new folder for your web pages. Click on the "New Folder" (1) Change the name of the new folder to something you like (2) and then Click the "Select Folder" button at the bottom (3)
-
+[//]:# Comment: I would do a list here of what to do, but definitely friendlier way to do it.
+[//]:# Comment: No changes
+[//]:# Comment:
+[//]:# Comment:
 ![VSCode New Folder](images/vscode-new-folder.png?raw=true)
 
 When you return to Code, you should have your new website folder open in your project.
@@ -51,7 +54,10 @@ By Train
 By Automobile
 By Boat
 ````
-
+[//]:# Comment: Although I would find Fried Gummy Bears interesting, why is this example so long?
+[//]:# Comment: It is a good example, but it also adds a great deal of "words" to the explaination
+[//]:# Comment: I would recommend that less words, say something like a club event would be a better way to go
+[//]:# Comment: No change requested
 So far, all we have is a little text. If we were to open that in a browser (go ahead and try it if you want to) you'll see something like this.
 
 ![Plain Text](images/plain-text.png?raw=true)
@@ -59,6 +65,9 @@ So far, all we have is a little text. If we were to open that in a browser (go a
 ###Let's Add Some Formatting
 
 > **Note:** Need to put in a explanation of HTML
+[//]:# Comment:
+[//]:# Comment:
+[//]:# Comment:
 
 
 First, let's tell the browser that the document that we are working with is going to be an HTML document. We'll do that by putting the following code at the beginning of our file.
