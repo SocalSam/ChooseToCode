@@ -38,9 +38,9 @@ Next, do the same around the main part of our web page including the both \<asid
 
 ````
 <div class="container-fluid">
-	<aside>
-	...
-	</aside>
+	<nav>...</nav>
+	<section>...</section>
+	<aside>...</aside>
 </div>
 ````
 
@@ -59,15 +59,15 @@ Next, we want to move on the main content of our web page. Once we have our cont
 
 In our example web page, we want to have the first list take up two columns, the main content to take the next eight columns and finally our second list to fill the final two columns.
 
-First, change both \<aside> tags to have a class of "col-sm-2". This means on all devices small and up, create a space that is two grid columns wide.
+First, change the \<nav> and \<aside> tags to have a class of "col-sm-3". This means on all devices small and up, create a space that is three grid columns wide.
 
 ````
-<aside class="col-sm-2">
+<aside class="col-sm-3">
 ````
-That will account for four of the columns in our grid, so now we want to change the main section of our content to have a class of "col-sm-8" to account for the other eight columns.
+That will account for six of the columns in our grid, so now we want to change the main section of our content to have a class of "col-sm-6" to account for the other six columns.
 
 ````
-<section class="col-sm-8">
+<section class="col-sm-6">
 ````
 
 Save and view your web page in a browser. Notice that the two lists we created now float to the right and left of our main content. What happens when you resize the window to a narrow screen similar to a phone? Notice that our content automatically reflows as necessary.
@@ -77,7 +77,7 @@ Now that the content flows a little better when we resize the content, let's tak
 We're going to make the content of the articles look a little nicer. First lets add a \<div> with a class of "row" to the main section.
 
 ````
-<section class="col-sm-8">
+<section class="col-sm-6">
 	<div class="row">
 	<article>
 		<h2>Amazing Museums</h2>
@@ -104,9 +104,53 @@ What this will do is give us another 12 column row grid that we can begin to lay
 	</div>
 </article>
 
-
 ````
 
-- Layout
-- Mobile Dev
-- Responsive Design
+###What about content ordering
+When the content reflows, things tend to jump around. The question you have to ask, is "What is the most important thing to be showing?" Currently, in a wide layout, our content is showing the main content between our two lists. When we resize the browser window to a narrow view, the main content is still between our two lists. What if we wanted to show our main content first? Let's do that now.
+
+Move the \<section> tag and all of it's content above the first \<nav> content.
+
+````
+<section class="col-sm-6">...<\section>
+<nav class="col-sm-3">
+...
+````
+
+Save and reload the page in the narrow format. We got the look that we wanted. What about when we go back to the wide view? Things don't look the way we really want them now. The lists are both on the right side of the web page.
+Thankfully, Bootstrap has a few extra classes that allow us to flow the content to where it needs to go. We put the content in the order that we want it to flow, then we use the Bootstrap classes to tweak the details. Let's look at the Bootstrap "push" and "pull" classes.
+We will modify the main \<section> class by telling it to push three columns to the right.
+
+````
+<section class="col-sm-6 col-sm-push-3">...</section>
+````
+
+Next, modify the \<nav> class by telling it to "pull" six columns to the left.
+
+````
+<nav class="col-sm-3 col-sm-pull-6">...</nav>
+````
+
+Save and reload the page and look at the difference between the narrow width and the wide width browsers. Notice now the most important content is where it needs to be for each type of display.
+
+###Push the changes to Azure
+To close out this module, let's check in our changes and push them to Azure. You should already be set up for this from the previous modules, so if you haven't done the push to Azure before, you will need to back up and do that module first.
+From a "Git Shell" prompt, we will do the following steps:
+
+ 1. Add all of the changed files to a checkin
+	
+	````
+	git add .
+	````
+ 2. Commit all of the changed files to your local repository
+
+	````
+	git commit -m "Added bootstrap styling"
+	````
+ 3. Push all of the code changes to your Azure repository
+
+	````
+	git push azure master
+	````
+
+Now, navigate to your website at http://yourwebsite.azurewebsites.net and confirm that your code has been deployed.
