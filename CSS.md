@@ -45,7 +45,7 @@ Finally, let's learn how to add links to other locations. We will use an anchor 
 ````
 <h2>Things to Do</h2>
 <ol>
-	<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+	<li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
 	<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
 	<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
 	<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
@@ -116,7 +116,7 @@ Let's move on to the body of the web page. Let's take the first list that we hav
 <nav>
 	<h2>Things to Do</h2>
 	<ol>
-		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
 		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
 		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
 		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
@@ -175,7 +175,7 @@ Another way to fix this is by adding a class to the \<h2> in our lists and call 
 <nav>
 	<h2 class="listtitle">Things to Do</h2>
 	<ol>
-		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
 		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
 		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
 		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
@@ -200,7 +200,7 @@ We can mix and match selectors for tags and classes to get pretty specific about
 <nav>
 	<h2 class="listtitle">Things to Do</h2>
 	<ol id="todolist">
-		<li><a href="http://www.bing.com/search?q=hiking">Hiking<a></li>
+		<li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
 		<li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
 		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
 		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
