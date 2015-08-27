@@ -56,8 +56,9 @@ Finally, let's learn how to add links to other locations. We will use an anchor 
 We can change hyperlinks to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, in the following hyperlink, we are using an image for the item to click. There is no text displayed as part of this hyperlink.
 
 ````
-<a href="http://amazon.com"><img src="images/amazonlogo.jpg" /></a>
+<a href="http://microsoft.com"><img src="images/microsoftlogo.jpg" /></a>
 ````
+So now we have a link to the Microsoft web site and the logo will be what the user sees to click on.
 
 ###Now for some style
 Now that you have a few more items to work with in your HTML, let's look at some ways that we can make things look a little more stylish than plain black and white text.
