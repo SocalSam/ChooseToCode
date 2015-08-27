@@ -64,28 +64,47 @@ First, change both \<aside> tags to have a class of "col-sm-2". This means on al
 ````
 <aside class="col-sm-2">
 ````
-Next, change the 
+That will account for four of the columns in our grid, so now we want to change the main section of our content to have a class of "col-sm-8" to account for the other eight columns.
 
 ````
 <section class="col-sm-8">
 ````
 
-Save and view. Resize the window to see reflow.
+Save and view your web page in a browser. Notice that the two lists we created now float to the right and left of our main content. What happens when you resize the window to a narrow screen similar to a phone? Notice that our content automatically reflows as necessary.
+
+###More rows
+Now that the content flows a little better when we resize the content, let's take a closer look at our main content.
+We're going to make the content of the articles look a little nicer. First lets add a \<div> with a class of "row" to the main section.
 
 ````
-<article class="row">
+<section class="col-sm-8">
+	<div class="row">
+	<article>
+		<h2>Amazing Museums</h2>
+
+	...
+
+	</article>
+	</div>
+</section>
+````
+
+What this will do is give us another 12 column row grid that we can begin to lay each article out. Let's make the image take up three columns and the paragraphs fit in the other nine columns.
+
+````
+<article>
 	<h2>Amazing Museums</h2>
 	<div class="col-sm-3">
 		<img src="http://lorempixel.com/200/100/city/1" />
 	</div>
 	<div class="col-sm-9">
-		<p>While most museums are a collection of old artifacts and stuff that no one is really interested in seeing, our musuems
-			are the best of the best.</p>
-		<p>You won't find anything like these any where else in the world. Our museums rival that of our closest competitors including
-			the Museum of Bad Art, the Paris Sewers Musuem and the Museum of Broken Relationships.</p>
+		<p>While most museums are a collection of old artifacts and stuff that no one is really interested in seeing, our musuems are the best of the best.</p>
+		<p>You won't find anything like these any where else in the world. Our museums rival that of our closest competitors	including the Museum of Bad Art, the Paris Sewers Musuem and the Museum of Broken Relationships.</p>
 		<p>Come check them out...the fun is waiting for you.</p>
 	</div>
 </article>
+
+
 ````
 
 - Layout
