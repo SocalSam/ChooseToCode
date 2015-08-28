@@ -8,21 +8,27 @@ Let's get going by starting up Visual Studio Code. Once the editor is open, we w
 ![VSCode File Open Folder](images/vscode-file-open-folder.png?raw=true)
 
 In the dialog window that comes up, navigate to a good location to store your new project. Often the best place will be your "Documents" folder, but choose a location where you will remember where to find it later. Once you have a location selected, you will want to create a new folder for your web pages. Click on the "New Folder" (1) Change the name of the new folder to something you like (2) and then Click the "Select Folder" button at the bottom (3)
-[//]:# Comment: I would do a list here of what to do, but definitely friendlier way to do it.
+[//]:# Comment:************ BEGIN *****************
+[//]:# Comment: I would do a list here of what to do, but what is written is definitely a friendlier way to do it.
 [//]:# Comment: No changes
 [//]:# Comment:
-[//]:# Comment:
+[//]:# Comment:*************END********************
+
 ![VSCode New Folder](images/vscode-new-folder.png?raw=true)
 
 When you return to Code, you should have your new website folder open in your project.
 
 ![Code Folder](images/code-folder.png?raw=true)
+[//]: # Comment: ************ BEGIN *****************
+[//]: # Comment: This image does not map to the outcome if I use the folder shown in image.  Recommend that the two should be the same.
+[//]: # Comment: ************ END    *****************
 
 Alright, now let's create a new file in your website folder for the text of our web page. We'll do this by hovering the mouse over the folder and clicking the icon that looks like a piece of paper with a plus sign (1).
 
 (![New file](images/new-file.png?raw=true)
 
 Now, let's name the file "index.html". Really, you could call the page anything, but most websites have an index page as their first page, so it's a good idea to name your file this way.
+
 
 Now, let's add some text to this file. Add a few lines like the following (or you can just cut and paste the following code to have enough text to follow along).
 
@@ -54,20 +60,30 @@ By Train
 By Automobile
 By Boat
 ````
+[//]:# Comment: ************ BEGIN *****************
 [//]:# Comment: Although I would find Fried Gummy Bears interesting, why is this example so long?
 [//]:# Comment: It is a good example, but it also adds a great deal of "words" to the explaination
 [//]:# Comment: I would recommend that less words, say something like a club event would be a better way to go
 [//]:# Comment: No change requested
+[//]:# Comment: ************ END *****************
+
 So far, all we have is a little text. If we were to open that in a browser (go ahead and try it if you want to) you'll see something like this.
 
 ![Plain Text](images/plain-text.png?raw=true)
 
+[//]:# Comment: ************ BEGIN *****************
+[//]:# Comment: Not in my browser, following the exact steps
+[//]:# Comment: I did not save the index.html according to the instructions
+[//]:# Comment: Also, how did I know how to open the index.html file?
+[//]:# Comment: Might be a good idea to add the concept that the file size is important, it is zero before saving and about 2 kb after signing.
+[//]:# Comment: ************ END *****************
+
 ###Let's Add Some Formatting
 
 > **Note:** Need to put in a explanation of HTML
+[//]:# Comment:************ BEGIN *****************
 [//]:# Comment:
-[//]:# Comment:
-[//]:# Comment:
+[//]:# Comment: ************ END *****************
 
 
 First, let's tell the browser that the document that we are working with is going to be an HTML document. We'll do that by putting the following code at the beginning of our file.
@@ -84,7 +100,10 @@ Hiking
 Most browsers will assume that it is HTML without this, but it's never a bad idea to set the expectation for the browser to view your file as HTML.
 
 Next, we need to tell the browser where the HTML starts and stops. We do this by using tags. Opening tags look like this "\<html>" and closing tags look like this "\</html>". Let's put these at the top and bottom of your web page now.
-
+[//]:# Comment: ******************************* START
+[//]:# Comment: Why do I need to tell the HTML to start and stop?  Might too wordy to explain.  But for most people who use modern tools for editing this might be confusing.  For instance I do not have to tell Word where to start and stop.  Again, just a thought. 
+[//]:# Comment: Why is there a wrench on the left hand side of the tag?
+[//]:# Comment: ****************************** END
 ````HTML
 <!doctype html>
 <html>
@@ -109,6 +128,9 @@ Let's add those tags now. We don't have any \<head> content just yet, so we will
 <html>
 	<head></head>
 	<body>Visit Anytown, USA!
+[//]:# Comment:************ BEGIN *****************
+[//]:# Comment: Why didn't my "Visit Anytown, USA!" tab over, do I tab it over?
+[//]:# Comment: ************ END *****************
 
 Things to Do
 ...
@@ -119,7 +141,10 @@ By Boat
 ````
 
 Next, we want to set a number of the lines to be "header" lines. We do this with tags \<h1>, \<h2>, and so on to \<h6>. The top most level is \<h1>. While we are at it, we want to mark the paragraphs of text with a \<p> tag. This helps the browser to format these as individual paragraphs rather than creating one long block of text.
-
+[//]:# Comment:
+[//]:# Comment: Define "header" lines?  Not a show stopper but I bet there will be some teachers who would like to answer that question.  For example:
+"These tags create lines that are referred to as header lines because they are part of a class of elements that are called Metadata.  Metadata is not shown to the person who is reading the page."
+[//]:# Comment:
 ````HTML
 <!doctype html>
 <html>
@@ -158,11 +183,22 @@ Next, we want to set a number of the lines to be "header" lines. We do this with
 ````
 
 If you open your file in a browser now, it should look much nicer.
+[//]:# Comment: ************ BEGIN **************
+[//]:# Comment: No it doesn't.  Need to make sure that they save the file
+[//]:# Comment:************ END *****************
 
 ![H1 and P tags](images/h1-and-p-tags.png?raw=true)
 
-Finally, we have two lists we want to work with. In HTML, we have two types of lists: Ordered and Unordered. An ordered list puts a numeric value at the beginning of each list item where unordered lists use a graphic symbol to mark each list item.
+[//]:# Comment: ************ BEGIN **************
+[//]:# Comment:********* JUST A THOUGHT *********
+[//]:# Comment: Why are lists important, bear in mind HS students might not understand why people like lists.  I like lists.
+[//]:# Comment:************ END ***********************
 
+Finally, we have two lists we want to work with. In HTML, we have two types of lists: Ordered and Unordered. An ordered list puts a numeric value at the beginning of each list item where unordered lists use a graphic symbol to mark each list item.
+[//]:# Comment: ************ BEGIN **************
+[//]:# Comment:********* JUST A THOUGHT *********
+[//]:# Comment: Why did you use the term "numeric", it is in the vocabulary of the HS Student for sure, but... Why not just say number?  
+[//]:# Comment:************ END ***********************
 To create an ordered list, we use an \<ol> tag and for an unordered list, we use an \<ul> tag. For both lists, each individual list item is marked with an \<li> tag.
 
 ````HTML
@@ -184,6 +220,10 @@ To create an ordered list, we use an \<ol> tag and for an unordered list, we use
 		<li>By Boat</li>
 	</ul>
 ````
+[//]:# Comment: ************ BEGIN **************
+[//]:# Comment:********* JUST A THOUGHT *********
+[//]:# Comment: Why not check out the page at this point?
+[//]:# Comment:************ END ***********************
 
 ###Let's give your page a title
 Remember that \<head> tag we put in early on. Let's go back and add another tag to tell your browser what to display in a window title. This will help us know which window is your web page.
@@ -200,3 +240,8 @@ This time we are going to insert a \<title> tag to the \<head>. There are other 
 ````
 
 Congratulations, you turned a simple text file into an HTML file. You are now ready to move on and learn how to add some more style and flair to your web page.
+
+[//]:# Comment: ************ BEGIN **************
+[//]:# Comment:
+[//]:# Comment: Good job, the only fixes would the third image, make sure to remind them to save, explain HTML.
+[//]:# Comment:************ END ***********************
