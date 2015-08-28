@@ -1,8 +1,17 @@
 ﻿##More HTML and Stylesheets
+^**Note:** *************BEGIN***************
+^**Note:** 
+^**Note:** 
+^**Note:** 
+^**Note:** ************* END ***************
 
 ###Add some elements to the page
 
 Before we take a look at adding some style to our page, let's add a few more elements to our web page. While you can make everything in your web page with the \<h1> and \<p> tags for headers and paragraphs, it it helpful to have some other items in your page. Some of these items will be more informative about the text that is inside of the tag.
+
+^**Note:** *************BEGIN***************
+^**Note:** Is is correct to assume that the previous md file was read?
+^**Note:** ************* END ***************
 
 In HTML5 we have a number of elements that actually describe the content that we have on the page better. For example, instead of just having an \<h1> tag, we can add a \<header> tag to be clear that this is a header for the document or a section. Similarly, we can also set a \<footer> for the bottom of the document or section.
 
@@ -17,6 +26,11 @@ Let's add a header to the top of your "index.html" page. Here we added a \<heade
 
 Let's add a footer to our page as well. Many web pages will use a footer to contact information as well as a Copyright for the information on the page. Let's add one now.
 
+^**Note:** *************BEGIN***************
+^**Note:** Footer seems like it should be seen at the bottom of the page
+^**Note:** Which it is, might want to point out that the <footer></footer> should be just above the </body>
+^**Note:** It is clear in the image, but it could be missed (I did).
+^**Note:** ************* END ***************
 ````
 	<footer>
 		Copyright 2015
@@ -32,8 +46,18 @@ Now, for a little visual appeal, we want to add some images to our text. Usually
 Let's create a folder for images and then link an image to your web page.
 
 ![images folder](images/images-folder.png?raw=true)
+^**Note:** *************BEGIN***************
+^**Note:** Image shows the file app.css, how did that happen?
+^**Note:** Either add App.css addition to Code or change image (sorry)
+^**Note:** ************* END ***************
 
 Next, copy an image to this folder and then we can add it to part of your web page with an \<img> tag. Notice that the "src" attribute is pointing to where the image is stored. This could also be an image stored on another server.
+
+^**Note:** *************BEGIN***************
+^**Note:** Might note that the image name will be different.
+^**Note:** Not sure if this would cause confusion, but if I drag an image in, the name will be different
+^**Note:** But attempt at clarification might lead to more and inefficient words.  The other server comment could be deleted.
+^**Note:** ************* END ***************
 
 ````
 <img src="images/picture1.jpg" />
@@ -54,6 +78,11 @@ Finally, let's learn how to add links to other locations. We will use an anchor 
 ````
 
 We can change hyperlinks to a more interesting link like an image if we change the content of the anchor tag (\<a>). For example, in the following hyperlink, we are using an image for the item to click. There is no text displayed as part of this hyperlink.
+^**Note:** *************BEGIN***************
+^**Note:** Where did I get this image?  Well of course this ties back to you mention of using other servers.
+^**Note:** But HS Students sometimes have short attention spans, mostly the ones who will become managers (haha)
+^**Note:** Difficult to easily implement.  Where did I get the image?  Does it have to be a jpg?
+^**Note:** ************* END ***************
 
 ````
 <a href="http://microsoft.com"><img src="images/microsoftlogo.jpg" /></a>
@@ -79,7 +108,11 @@ In the example below, we are loading a stylesheet called "app.css" that will con
 ````
 <link href="app.css" rel="stylesheet" />
 ````
-
+^**Note:** *************BEGIN***************
+^**Note:** For some reason this seems confusing, of course that could just be me
+^**Note:** Not a show stopper, but take a look at clarification or emphasis of the addition of file.
+^**Note:** ALSO and important, where do I put the <link...> line?  Where to put stuff is confusing to students new to HTML
+^**Note:** ************* END ***************
 Let's do that now with your existing "index.html" page we have already created. First create a new file called "app.css" in the same folder as your index.html file and add the above \<link> to the stylesheet.
 
 ![Add app css](images/add-app-css.png?raw=true)
@@ -94,8 +127,14 @@ header, footer {
 	color: #ddd;
 }
 ````
+^**Note:** *************BEGIN***************
+^**Note:** Following the instructions made the whole page background dark
+^**Note:** 
+^**Note:** 
+^**Note:** ************* END ***************
 
 Save your "index.html" and "app.css" files and reload the index.html in your browser. Your header and foother should now be light grey on a dark grey.
+
 
 Now let's add some visual space around our text with some "padding". It might also look nice to center our text so let's go ahead and add that too.
 
@@ -107,12 +146,21 @@ header, footer {
 	text-align: center;
 }
 ````
-
+^**Note:** *************BEGIN***************
+^**Note:**  ...you...
+^**Note:** ...your...
+^**Note:** 
+^**Note:** ************* END ***************
 Save you "app.css" and refresh your browser to see how it looks.
 
 Let's move on to the body of the web page. Let's take the first list that we have and put the HTML tag \<nav> around it to show they are not a main part of the content. Typically, we would use this tag to identify a navigation menu.
 
 ````
+^**Note:** *************BEGIN***************
+^**Note:** Why did I add the <nav> tag?  When I refresh my browser there is no obvious changes.
+^**Note:** Nav, aside css code works,
+^**Note:** 
+^**Note:** ************* END ***************
 <nav>
 	<h2>Things to Do</h2>
 	<ol>
@@ -137,7 +185,11 @@ Next, lets put a tag around the second list to call it out as not being part of 
 	</ul>
 </aside>
 ````
-
+^**Note:** *************BEGIN***************
+^**Note:** Following the practice of showing the students where to put tags, show where the <section> tags goes
+^**Note:** 
+^**Note:** 
+^**Note:** ************* END ***************
 Finally, for the rest of the body, let's define this as a \<section>. All of the content between our \<nav> and \<aside> lists will be surrounded by this \<section> tag.
 
 Now, let's set the colors and alignment for our lists.
@@ -197,6 +249,11 @@ Save and refresh to see your list titles updated.
 We can mix and match selectors for tags and classes to get pretty specific about the items we are asking to style. There is an additional selector for a tag with a specific id (we use "#" instead of the "." dot). First you would add an "id" attribute to your html tag.
 
 ````
+^**Note:** *************BEGIN***************
+^**Note:** Could the todolist be confusing?  What about activitieslist or sportslist
+^**Note:** 
+^**Note:** 
+^**Note:** ************* END ***************
 <nav>
 	<h2 class="listtitle">Things to Do</h2>
 	<ol id="todolist">
