@@ -14,6 +14,7 @@ In the dialog window that comes up, navigate to a good location to store your ne
 When you return to Code, you should have your new website folder open in your project.
 
 ![Code Folder](images/code-folder.png?raw=true)
+[//]: # This image does not map to the image on my system, which shows MYNEWWEBSITE, because I wrote my folder to be the same as the image.
 
 Alright, now let's create a new file in your website folder for the text of our web page. We'll do this by hovering the mouse over the folder and clicking the icon that looks like a piece of paper with a plus sign (1).
 
