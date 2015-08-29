@@ -73,18 +73,16 @@ That will account for six of the columns in our grid, so now we want to change t
 Save and view your web page in a browser. Notice that the two lists we created now float to the right and left of our main content. What happens when you resize the window to a narrow screen similar to a phone? Notice that our content automatically reflows as necessary.
 
 ###More rows
-Now that the content flows a little better when we resize the content, let's take a closer look at our main content.
+Now that the content flows a little better when we resize the browser, let's take a closer look at our main content.
 We're going to make the content of the articles look a little nicer. First lets add a \<div> with a class of "row" to the main section.
 
 ````
 <section class="col-sm-6">
 	<div class="row">
-	<article>
 		<h2>Amazing Museums</h2>
 
 	...
 
-	</article>
 	</div>
 </section>
 ````
