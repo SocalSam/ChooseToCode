@@ -1,4 +1,4 @@
-﻿##Your First Web Page
+##Your First Web Page
 
 ###Let's just start with plain text
 For now, we'll start with just a text file that will tell people a little about you, a school club or a hobby you like. We'll put this in our code editor even though we are just doing text.
@@ -10,6 +10,7 @@ Let's get going by starting up Visual Studio Code. Once the editor is open, we w
 In the dialog window that comes up, navigate to a good location to store your new project. Often the best place will be your "Documents" folder, but choose a location where you will remember where to find it later. Once you have a location selected, you will want to create a new folder for your web pages. Click on the "New Folder" (1) Change the name of the new folder to something you like (2) and then Click the "Select Folder" button at the bottom (3)
 
 ![VSCode New Folder](images/vscode-new-folder.png?raw=true)
+
 
 When you return to Code, you should have your new website folder open in your project.
 
@@ -59,6 +60,14 @@ So far, all we have is a little text. If we were to open that in a browser (go a
 ###Let's Add Some Formatting
 
 > **Note:** Need to put in a explanation of HTML
+HTML is a combination of a number of user interface concepts, and stands for Hyper-Text Markup Language.  Initially HTML was designed to facilitate professional collaboration in the high energy physcic community at CERN in 1989.  Use your browser to search for article on the history of the web beginning at CERN, there are many good resources.  Talk to your teacher or teaching assistant to learn more about the early history of the Internet.  
+You might consider these questions:
+<ul>
+	<ol>Who is Tim Berners-Lee?</ol>
+	<ol>What was the three new technologies that were incorporated into the HTML proposal?</ol>
+	<ol>What was the Month and Year that the first information-sharing system using HTML, HTTP, and a client software program?</ol>
+	<ol>What three letters are associated with the client software program for HTML?</ol>
+<ul>
 
 
 First, let's tell the browser that the document that we are working with is going to be an HTML document. We'll do that by putting the following code at the beginning of our file.
