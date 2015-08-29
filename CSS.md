@@ -32,12 +32,18 @@ Now, for a little visual appeal, we want to add some images to our text. Usually
 Let's create a folder for images and then link an image to your web page.
 
 ![images folder](images/images-folder.png?raw=true)
+>##NOTE:## BEGIN
+>##NOTE:## THi image shows the app.css which has not been added yet, needs to be modified
+>##NOTE:## NED
 
 Next, copy an image to this folder and then we can add it to part of your web page with an \<img> tag. Notice that the "src" attribute is pointing to where the image is stored. This could also be an image stored on another server.
 
 ````
 <img src="images/picture1.jpg" />
 ````
+>##NOTE:## BEGIN
+>##NOTE:## WHere should I put this code?
+>##NOTE:## NED
 
 ###Adding Hyperlinks
 Finally, let's learn how to add links to other locations. We will use an anchor tag for this, and we'll start with something simple like text. Let's take our list of things to do and make hyperlinks to a search engine.
@@ -58,6 +64,9 @@ We can change hyperlinks to a more interesting link like an image if we change t
 ````
 <a href="http://microsoft.com"><img src="images/microsoftlogo.jpg" /></a>
 ````
+>##NOTE:## BEGIN
+>##NOTE:## As a student where is this image?  Do I have to search for it using Bing, which has Bing Rewards? :)
+>##NOTE:## END
 So now we have a link to the Microsoft web site and the logo will be what the user sees to click on.
 
 ###Now for some style
@@ -94,7 +103,9 @@ header, footer {
 	color: #ddd;
 }
 ````
-
+>##NOTE:## Begin
+>##NOTE:## For some reason this didn't work as expected, but then when I redid the first assignment, it worked as expected.  Weird.
+>##NOTE:## END
 Save your "index.html" and "app.css" files and reload the index.html in your browser. Your header and foother should now be light grey on a dark grey.
 
 Now let's add some visual space around our text with some "padding". It might also look nice to center our text so let's go ahead and add that too.
@@ -109,7 +120,9 @@ header, footer {
 ````
 
 Save you "app.css" and refresh your browser to see how it looks.
-
+>##NOTE:## Begin
+>##NOTE:## Change "you" to "your"
+>##NOTE:##
 Let's move on to the body of the web page. Let's take the first list that we have and put the HTML tag \<nav> around it to show they are not a main part of the content. Typically, we would use this tag to identify a navigation menu.
 
 ````
@@ -139,6 +152,9 @@ Next, lets put a tag around the second list to call it out as not being part of 
 ````
 
 Finally, for the rest of the body, let's define this as a \<section>. All of the content between our \<nav> and \<aside> lists will be surrounded by this \<section> tag.
+>##NOTE:## Begin
+>##NOTE:## Show the code here?
+>##NOTE:## End
 
 Now, let's set the colors and alignment for our lists.
 
@@ -170,7 +186,9 @@ aside h2 {
 ````
 
 Another way to fix this is by adding a class to the \<h2> in our lists and call it "listtitle".
-
+>##NOTE:## Begin
+>##NOTE:## Not sure why we need this at this time, what is the explanation.  Not a problem, just not sure why.
+>##NOTE:## End
 ````
 <nav>
 	<h2 class="listtitle">Things to Do</h2>
@@ -214,5 +232,9 @@ Then add whatever styling elements that you needed to make it look right for you
 	color: green;
 }
 ````
+>##NOTE:## Begin
+>##NOTE:## Unable to get the #todolist to work, used copy and paste, using as a jumplink works
+>##NOTE:## Not sure what is going on, need to resolve.
+>##NOTE:## End
 
 There is WAY MORE to CSS than we have covered here. If you want to see the potential of CSS, you can take a look at http://csszengarden.com. This is a collection of pages that use the exact same HTML, but have a different stylesheet applied. As you click through the different designs, you will see the creativity and design that can come alive with styles.
