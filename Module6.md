@@ -95,7 +95,7 @@ What this will do is give us another 12 column row grid that we can begin to lay
 <article>
 	<h2>Amazing Museums</h2>
 	<div class="col-sm-3">
-		<img src="http://lorempixel.com/200/100/city/1" />
+		<img src="http://lorempixel.com/175/100/city/1" />
 	</div>
 	<div class="col-sm-9">
 		<p>While most museums are a collection of old artifacts and stuff that no one is really interested in seeing, our musuems are the best of the best.</p>
