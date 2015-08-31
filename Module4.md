@@ -1,4 +1,15 @@
 ﻿#Module X: Publishing a Web App
+﻿
+
+##NOTE:## ## BEGIN
+##NOTE:## ## This worked as described, but... there are somethings that change with use.
+##NOTE:## ## Password characters are not shown, make sure the end user knows that.
+##NOTE:## ## Shortnames like azure might not work if the enduser blew their password, so make sure they are informed that they will make some small modifications in that case.
+##NOTE:## ## How would I know to install Git?
+##NOTE:## ## Git Shell is called Git Cmd on windows, the use of Git Shell will cause confusion for Windows users
+##NOTE:## ## What if the end user has the Git GUI?  That can be installed with out installing Git Cmd (aka Git Shell)
+##NOTE:## ## 
+##NOTE:## ## END
 
 ###Objectives:
 - Publish a simple web page
