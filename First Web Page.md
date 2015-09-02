@@ -1,4 +1,4 @@
-##Your First Web Page
+﻿##Your First Web Page
 
 ###Let's just start with plain text
 For now, we'll start with just a text file that will tell people a little about you, a school club or a hobby you like. We'll put this in our code editor even though we are just doing text.
@@ -167,22 +167,22 @@ To create an ordered list, we use an \<ol> tag and for an unordered list, we use
 
 ````HTML
 	<h2>Things to Do<h2> 
-	<ol>
+	<ul>
 		<li>Hiking</li>
 		<li>Biking</li>
 		<li>Horseback</li>
 		<li>Backpacking</li>
-	</ol>
+	</ul>
 ````
 
 ````HTML
 	<h2>How to Get Here</h2>
-	<ul>
+	<ol>
 		<li>By Plane</li>
 		<li>By Train</li>
 		<li>By Automobile</li>
 		<li>By Boat</li>
-	</ul>
+	</ol>
 ````
 
 ###Let's give your page a title
@@ -194,9 +194,14 @@ This time we are going to insert a \<title> tag to the \<head>. There are other 
 <!doctype html>
 <html>
 
-<head>My First Web Page</head>
+<head>
+	<title>My First Web Page</title>
+</head>
 
 <body>
+	...
+</body>
+</html>
 ````
 
 Congratulations, you turned a simple text file into an HTML file. You are now ready to move on and learn how to add some more style and flair to your web page.
