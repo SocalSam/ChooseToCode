@@ -12,9 +12,9 @@ Up to this point we have only been using HTML tags and CSS styles to change the 
 ###Red Alert!
 So let's start with the simplest example of JavaScript on your page. We will add a simple alert that will run as soon as your web page has completed loading. Let's add the following onload attribute to the \<body> tag.
 
-````
+```Javascript
 <body onload="alert('Page is Loaded');">
-````
+```
 
 When you save and reload your page, you should get a popup window that let's you know the page is loaded.
 
@@ -30,13 +30,13 @@ It is interesting that we just started writing code in our \<body> tag. For a si
 
 We have already seen that we can add code directly to your tag. Let's fix our \<body> tag to give us flexibility for more code. Change the onload attribute to the following:
 
-````
+```HTML
 <body onload="onLoad()">
-````
+```
 
 This will tell the page to call the "onLoad" function when our page is done loading. Let's add that "onLoad" function to our page. We are going to do this at the end of the \<head> tag.
 
-````
+```HTML
 <head>
 	<title>My First Web Page</title>
 	...
@@ -46,15 +46,15 @@ This will tell the page to call the "onLoad" function when our page is done load
 		}
 	</script>
 </head>
-````
+```
 
 Now, we could also be explicit and tell the browser that our script is in fact JavaScript and you may see this in many example scripts, but it isn't required.
 
 Keep in mind that JavaScript is case sensitive, so "OnLoad" and "onLoad" are not the same thing. If your code isn't doing what you expected, you may want to check the spelling and casing of your function.
 
-````
+```HTML
 <script type="application/javascript">
-````
+```
 
 This example put the \<script> code in the \<head> tag. We could also put the \<script> in the \<body> tag. When placing scripts in the \<body> tag, it is a good practive to put all of the script at the bottom to improve page performance.
 
@@ -62,17 +62,17 @@ If you have a lot of script on a single page, your page can start to get out of 
 
 Let's do that with the script we have right now. In VS Code, add a new file and we'll call it "app.js". Next, copy the function to the JavaScript file.
 
-````
+```Javascript
 function onLoad() {
 	alert("Function onLoad() called");
 }
-````
+```
 
 **Be careful not to include \<script> tags in the external file.**
 
 Next, we need to modify the script tag in our \<head> to load the script from an external file.
 
-````
+```HTML
 <head>
 	<title>My First Web Page</title>
 	...
@@ -89,7 +89,7 @@ Popping up annoying alerts is not the best use of JavaScript, so let's take a lo
 
 First we will take a look at dynamic content. We are going to start simple and update content when you click a button. First, let's add a placeholder for some content in the footer.
 
-````
+```HTML
 	<footer>
 		Copyright 2015
 		<p id="timestamp"></p>
@@ -98,11 +98,11 @@ First we will take a look at dynamic content. We are going to start simple and u
 
 Notice we gave an "id" to the \<p> tag in the footer. This is going to give us the ability to modify that tag specifically. Let's modify the JavaScript code and then look at what is going on.
 
-````
+```Javascript
 function onLoad() {
 	document.getElementById("timestamp").innerHTML = Date();
 }
-````
+```
 
 Save and reload the page. Next, examine the footer on your page and notice that the content shows the Date and Time of the page load. Once the document was loaded, we asked for the element that had an id of "timestamp" and then modified all of the HTML inside to be the result of the "Date()" function.
 
@@ -119,20 +119,20 @@ Next, let's add a place to put a message after we have checked the number.
 
 Finally, we'll add a button to allow the user to submit the value that was entered into the textbox.
 
-````
+```HTML
 <section class="col-sm-6 col-sm-push-3">
 
 	<input id="smallnumber" type="number">
 	<p id="numberMessage"></p>
 	<button onclick="checkNumber()">Submit</button>
 ...
-````
+```
 
 Save your work and refresh the browser and you should see these new elements on your web page. Right now, you might be able to add characters and really big numbers. We will need to add script that tells you wether or not the number is a valid number between 1 and 10.
 
 Next, we need to create our "checkNumber" function. Open up the "app.js" file and create a function called "checkNumber" at the end of the file. Remember casing is important here.
 
-````
+```Javascript
 function onLoad() {
 	...
 }
@@ -152,26 +152,26 @@ function checkNumber() {
     document.getElementById("numberMessage").innerHTML = theMessage;
 
 }
-````
+```
 
 Next, let's create some variables to hold our data.
 
-````
+```Javascript
 function checkNumber() {
 	var theNumber, theMessage;
 
 }
-````
+```
 
 Now, use the "getElementById" function to get the value of the textbox that the user entered.
 
-````
+```Javascript
 function checkNumber() {
 	var theNumber, theMessage;
 
 	theNumber = document.getElementById("smallnumber").value;
 }
-````
+```
 
 Next, we will use an "if" statement to check the value of "theNumber" to see if it passes the check for being between 1 and 10. We will make three checks. If any of them is true, then we don't need to test any further...it's a bad number. We do this with a logical OR statement. In JavaScript this is "||".
 
@@ -179,7 +179,7 @@ So, first we want to see if it is "not a number" (that's the isNaN). If that is 
 
 Finally, we use the "getElementById" to set the message on our web page to give feedback to our user.
 
-````
+```Javascript
 function checkNumber() {
 	var theNumber, theMessage;
 
@@ -194,9 +194,12 @@ function checkNumber() {
     document.getElementById("numberMessage").innerHTML = theMessage;
 
 }
-````
+```
+Save and reload the page in your browser. Try entering numbers in the textbox that are out of the range of what we put in code. Did the message get inserted in the HTML under the textbox?
 
-One thing to keep in mind is that just because you use JavaScript to keep a user from entering an unexpected value, NEVER trust that number to be sent back to your server. If a user turned JavaScript off this would not work. If an evil user used a tool to modify the value after your JavaScript ran, he could potentially send harmful data to your server.
+###Trust No One
+
+One thing to keep in mind is that just because you use JavaScript to keep a user from entering an unexpected value, NEVER trust that number to be sent back to your server. If a user turned JavaScript off your could would not run and you could get invalid data. If an evil user used a tool to modify the value after your JavaScript ran, he could potentially send harmful data to your server. Always be careful of what data is sent to your server.
 
 In this module we covered the basics of JavaScript to interact with your user. We displayed a pop-up to the user, we added the current time to the page on the fly, and finally we looked at validating input by the user.
 
