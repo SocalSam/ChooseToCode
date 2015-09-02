@@ -156,19 +156,19 @@ Let's move on to the body of the web page. Let's take the list that we have and 
 		<li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
 		<li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
 	</ul>
-</nav>
+</aside>
 ```
 Do the same thing with the second list as well.
 
 ```html
 <aside>
 	<h2>How to Get Here</h2>
-	<ul>
+	<ol>
 		<li>By Plane</li>
 		<li>By Train</li>
 		<li>By Automobile</li>
 		<li>By Boat</li>
-	</ul>
+	</ol>
 </aside>
 ```
 
