@@ -9,6 +9,7 @@ In order to begin using Bootstrap on our web page, we need to include it in our 
 
 In the index.html page, we're going to add the two Bootstrap files to our \<head> tag like this:
 
+
 ```HTML
 <head>
 	<title>My First Web Page</title>
