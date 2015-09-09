@@ -172,6 +172,25 @@ Save and reload the page in the narrow format. We got the look that we wanted. W
 ###Bootstrap Push and Pull
 
 Thankfully, Bootstrap has a few extra classes that allow us to flow the content to where it needs to go. We put the content in the order that we want it to flow, then we use the Bootstrap classes to tweak the details for the layout. Let's look at the Bootstrap "push" and "pull" classes.
+
+First, let's modify the page so that the main content within the <section> tag is first, followed by our two aside tags. To do this, I simple cut the first <aside> section and move it under the </section> tag
+
+```HTML
+            <section>
+            ...
+            </section>
+            
+            <aside class="col-sm-3">
+                <h2 class="title">Things to Do</h2> 
+                <ul>
+                    <li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
+                    <li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+                    <li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+                    <li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
+                </ul>
+            </aside> 
+```
+
 We will modify the main \<section> class by telling it to push three columns to the right.
 
 ```HTML
